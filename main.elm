@@ -141,7 +141,7 @@ view model =
     Svg.svg[Svga.width "100%", Svga.height "94%", Svga.id "Graphs"]
     ([
       Svg.text "Click Anywhere",
-      Svg.polyline [ Svga.fill "none", Svga.stroke "pink", Svga.points path_string ] []
+      Svg.polyline [ Svga.fill "none", Svga.stroke "purple", Svga.points path_string ] []
     ] ++ (List.map point_to_svg model.points)) ,
     button [onClick (Clear) , style "height" "5%", style "margin" "0px"] [text ("Clear Points")]
     ]
